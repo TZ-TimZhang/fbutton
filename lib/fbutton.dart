@@ -423,8 +423,8 @@ class _FButton extends State<FButton> {
 
     /// side
     Color sideColor = enabled
-        ? shadowColor ?? Colors.transparent
-        : shadowColor == null
+        ? widget.shadowColor ?? Colors.transparent
+        : widget.shadowColor == null
             ? Colors.transparent
             : widget.strokeColor.withOpacity(disableOpacity);
     BorderSide borderSide = BorderSide(
